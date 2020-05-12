@@ -1,0 +1,10 @@
+<h2>Pesquisar Axiomas</h2>
+<form action="/axioma" method="GET">
+    <label>Nome:</label>
+    <input type="type" name="nome" value="<%= searchOptions.nome %>">
+    <button type="submit">Pesquisar</button>
+</form>
+<br>
+<% axiomas.forEach(axioma => { %>
+    <div><%= axioma.nome %> || <%= axioma.declaracao %></div>
+<% }) %> 
